@@ -92,21 +92,31 @@ export default async function createPdf(specUrl, options) {
     styles: pdfStyles,
   };
 
-
   pdfMake.fonts = {
+    // Roboto: {
+    //   normal: 'Roboto-Regular.ttf',
+    //   bold: 'Roboto-Medium.ttf',
+    //   italics: 'Roboto-Italic.ttf',
+    //   bolditalics: 'Roboto-Medium.ttf',
+    // },
+    // RobotoMono: {
+    //   normal: 'RobotoMono-Regular.ttf',
+    //   bold: 'RobotoMono-Regular.ttf',
+    //   italics: 'RobotoMono-Regular.ttf',
+    //   bolditalics: 'RobotoMono-Regular.ttf',
+    // },
     Roboto: {
-      normal: 'Roboto-Regular.ttf',
-      bold: 'Roboto-Medium.ttf',
-      italics: 'Roboto-Italic.ttf',
-      bolditalics: 'Roboto-Medium.ttf',
+      normal: 'msjh.ttf',
+      bold: 'msjh.ttf',
+      italics: 'msjh.ttf',
+      bolditalics: 'msjh.ttf',
     },
     RobotoMono: {
-      normal: 'RobotoMono-Regular.ttf',
-      bold: 'RobotoMono-Regular.ttf',
-      italics: 'RobotoMono-Regular.ttf',
-      bolditalics: 'RobotoMono-Regular.ttf',
+      normal: 'msjh.ttf',
+      bold: 'msjh.ttf',
+      italics: 'msjh.ttf',
+      bolditalics: 'msjh.ttf',
     },
-
   };
   // pdfMake.vfs = pdfFonts.pdfMake.vfs;
   pdfMake.vfs = pdfFonts;
